@@ -1,0 +1,33 @@
+export type ProjectTag =
+  | 'React'
+  | 'TypeScript'
+  | 'Tailwind'
+  | 'IoT'
+  | 'Framer Motion'
+  | 'Web3'
+  | 'Rest API'
+  | 'GraphQL'
+  | 'InertiaJS'
+  | 'Laravel'
+  | 'Next.js'
+  | 'Node.js'
+  | 'Express'
+  | 'MongoDB'
+  | 'PostgreSQL'
+  | 'Docker'
+  | 'AWS'
+  | 'Firebase'
+  | 'Midtrans';
+
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  role: string;
+  tags: readonly ProjectTag[];
+  highlights: readonly string[];
+  links: {
+    live?: string;
+    github?: string;
+  };
+};
