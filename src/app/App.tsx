@@ -13,7 +13,7 @@ export default function App() {
     <div className="overflow-hidden">
       <AuroraBackground />
       <Navbar />
-      <main>
+      <main className=" pt-[65px] md:pt-[72px]">
         <Hero />
         <Highlights />
         <About />

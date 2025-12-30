@@ -147,7 +147,7 @@ export function Navbar() {
   }, [active]);
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div className="bg-white/70 dark:bg-[#070A12]/70 backdrop-blur border-b border-slate-200/60 dark:border-white/10">
         <Container className="flex items-center justify-between py-3">
           <a

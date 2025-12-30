@@ -123,7 +123,7 @@ export function Hero() {
             </Reveal>
           </div>
 
-          <div className="order-1 lg:order-2">
+          <div className="order-1 lg:order-2 pt-10 sm:pt-5 md:pt-0">
             <div className="relative mx-auto w-full max-w-[460px]">
               <motion.div ref={orbRef} initial={{ opacity: 0, y: 16, rotate: -1.5 }} whileInView={{ opacity: 1, y: 0, rotate: 0 }} viewport={{ once: true, amount: 0.6 }} transition={{ duration: 0.7, ease: 'easeOut' }} className="relative">
                 <div className="absolute -inset-2 rounded-[36px] opacity-70 blur-2xl bg-[conic-gradient(from_180deg,rgba(249,115,22,0.35),rgba(20,184,166,0.30),rgba(56,189,248,0.24),rgba(249,115,22,0.35))]" />
