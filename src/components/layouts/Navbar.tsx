@@ -30,6 +30,12 @@ function IconClose(props: React.SVGProps<SVGSVGElement>) {
 
 type Href = (typeof NAV)[number]['href'];
 
+const HREFS = NAV.map((n) => n.href) as readonly Href[];
+
+function isHref(value: string): value is Href {
+  return (HREFS as readonly string[]).includes(value);
+}
+
 export function Navbar() {
   const [active, setActive] = useState<Href>('#home');
   const [open, setOpen] = useState(false);
@@ -66,7 +72,7 @@ export function Navbar() {
 
     lockUntilRef.current = Date.now() + 900;
 
-    setActive(href as Href);
+    setActive(isHref(href) ? href : '#home');
     setOpen(false);
 
     if (el) {
@@ -79,10 +85,14 @@ export function Navbar() {
   };
 
   useEffect(() => {
-    const onHash = () => setActive(((window.location.hash as any) || '#home') as Href);
-    onHash();
-    window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
+    const syncFromHash = () => {
+      const hash = window.location.hash || '#home';
+      setActive(isHref(hash) ? hash : '#home');
+    };
+
+    syncFromHash();
+    window.addEventListener('hashchange', syncFromHash);
+    return () => window.removeEventListener('hashchange', syncFromHash);
   }, []);
 
   useEffect(() => {
