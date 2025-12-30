@@ -24,13 +24,37 @@ export function ProjectCard({ project, onOpen }: { project: Project; onOpen: () 
         "
       />
 
+
       <div className="relative h-40">
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={`${project.title} preview`}
+            loading="lazy"
+            className="
+              absolute inset-0 h-full w-full object-cover
+              transition-transform duration-500
+              group-hover:scale-[1.03]
+            "
+          />
+        ) : null}
+
+
+        {!project.image ? (
+          <div
+            className="
+              absolute inset-0
+              bg-[radial-gradient(circle_at_22%_28%,rgba(249,115,22,0.35),transparent_55%),
+                  radial-gradient(circle_at_78%_62%,rgba(20,184,166,0.26),transparent_58%),
+                  radial-gradient(circle_at_65%_15%,rgba(56,189,248,0.20),transparent_60%)]
+            "
+          />
+        ) : null}
         <div
           className="
             absolute inset-0
-            bg-[radial-gradient(circle_at_22%_28%,rgba(249,115,22,0.35),transparent_55%),
-                radial-gradient(circle_at_78%_62%,rgba(20,184,166,0.26),transparent_58%),
-                radial-gradient(circle_at_65%_15%,rgba(56,189,248,0.20),transparent_60%)]
+            bg-gradient-to-t from-black/60 via-black/20 to-black/10
+            dark:from-black/70 dark:via-black/25 dark:to-black/10
           "
         />
 
@@ -56,22 +80,22 @@ export function ProjectCard({ project, onOpen }: { project: Project; onOpen: () 
             <h3
               className="
                 text-xl font-semibold leading-snug tracking-tight
-                text-slate-900/90 dark:text-slate-100
-                group-hover:text-orange-600 dark:group-hover:text-orange-400 transition
+                text-white
+                group-hover:text-orange-200 transition
                 line-clamp-2
               "
               title={project.title}
             >
               {project.title}
             </h3>
-            <p className="mt-1 text-xs text-slate-600/90 dark:text-slate-300/90">Click to view details</p>
+            <p className="mt-1 text-xs text-white/80">Click to view details</p>
           </div>
 
           <span
             className="
               shrink-0 rounded-full px-3 py-1 text-[11px] font-medium
-              bg-white/70 dark:bg-white/10
-              border border-slate-900/10 dark:border-white/10
+              bg-white/80 text-slate-900
+              border border-white/30
               backdrop-blur
             "
           >
@@ -88,21 +112,21 @@ export function ProjectCard({ project, onOpen }: { project: Project; onOpen: () 
             <span
               key={t}
               className="
-    rounded-full px-3 py-1 text-[11px] font-semibold
-    bg-white text-slate-800
-    border border-orange-200/80
-    shadow-sm
-    transition
-    hover:-translate-y-[1px]
-    hover:border-orange-300
-    hover:bg-orange-50
-    hover:text-orange-700
-    hover:shadow-[0_10px_25px_rgba(249,115,22,0.14)]
-    dark:bg-white/5 dark:text-slate-100
-    dark:border-orange-400/20
-    dark:hover:bg-orange-400/10
-    dark:hover:text-orange-300
-  "
+                rounded-full px-3 py-1 text-[11px] font-semibold
+                bg-white text-slate-800
+                border border-orange-200/80
+                shadow-sm
+                transition
+                hover:-translate-y-[1px]
+                hover:border-orange-300
+                hover:bg-orange-50
+                hover:text-orange-700
+                hover:shadow-[0_10px_25px_rgba(249,115,22,0.14)]
+                dark:bg-white/5 dark:text-slate-100
+                dark:border-orange-400/20
+                dark:hover:bg-orange-400/10
+                dark:hover:text-orange-300
+              "
             >
               {t}
             </span>
@@ -111,13 +135,13 @@ export function ProjectCard({ project, onOpen }: { project: Project; onOpen: () 
           {project.tags.length > 5 ? (
             <span
               className="
-    rounded-full px-3 py-1 text-[11px] font-semibold
-    bg-white text-slate-700
-    border border-orange-200/60
-    shadow-sm
-    dark:bg-white/5 dark:text-slate-200
-    dark:border-orange-400/15
-  "
+                rounded-full px-3 py-1 text-[11px] font-semibold
+                bg-white text-slate-700
+                border border-orange-200/60
+                shadow-sm
+                dark:bg-white/5 dark:text-slate-200
+                dark:border-orange-400/15
+              "
             >
               +{project.tags.length - 5}
             </span>

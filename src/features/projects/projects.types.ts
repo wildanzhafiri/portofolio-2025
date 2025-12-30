@@ -24,10 +24,11 @@ export type Project = {
   title: string;
   description: string;
   role: string;
-  tags: readonly ProjectTag[];
-  highlights: readonly string[];
+  tags: ProjectTag[];
+  highlights: string[];
   links: {
     live?: string;
     github?: string;
   };
+  image?: string;
 };

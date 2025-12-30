@@ -15,7 +15,7 @@ export const PROJECTS: readonly Project[] = [
       'Automatic receipt generation for completed transactions',
       'Role-based access control with different privileges for owners and employees',
     ],
-
+    image: `${import.meta.env.BASE_URL}projects/domma.png`,
     links: {
       // live: 'https://...',
       // github: 'https://...',
@@ -34,6 +34,7 @@ export const PROJECTS: readonly Project[] = [
       'Tracking page using booking code with status progression',
       'Field officer reporting with photo evidence upload',
     ],
+    image: `${import.meta.env.BASE_URL}projects/bulkyhub.png`,
     links: {
       github: 'https://github.com/wildanzhafiri/BulkyHub-FE',
     },
@@ -50,6 +51,7 @@ export const PROJECTS: readonly Project[] = [
       'Status tracking: New / In Review / Rejected / Resolved',
       'Admin dashboard to review reports and update status with confirmation',
     ],
+    image: `${import.meta.env.BASE_URL}projects/laporin.png`,
     links: {
       live: 'http://laporin.bccdev.id/admin',
       github: 'https://github.com/wildanzhafiri/fe-LaporIn',
@@ -68,6 +70,7 @@ export const PROJECTS: readonly Project[] = [
       'Admin dashboard for managing batik/quizzes content',
       'Marketplace direction for finding batik products (external purchase flow)',
     ],
+    image: `${import.meta.env.BASE_URL}projects/kenalbatik.png`,
     links: { github: 'https://github.com/bektiyuda/KenalBatik' },
   },
   {
@@ -83,6 +86,7 @@ export const PROJECTS: readonly Project[] = [
       'E-ticket management with QR code + purchase history',
       'Organizer dashboard for event/ticket category management + sales analytics',
     ],
+    image: `${import.meta.env.BASE_URL}projects/ticketbuzz.png`,
     links: {
       github: 'https://github.com/wildanzhafiri/TicketBuzz',
     },
@@ -101,6 +105,7 @@ export const PROJECTS: readonly Project[] = [
       'Checkout experience with cost summary + voucher selection',
       'Provider dashboard with key stats and product management entry',
     ],
+    image: `${import.meta.env.BASE_URL}projects/lentara.png`,
     links: {
       live: 'https://fe-intern-bcc.vercel.app/',
       github: 'https://github.com/wildanzhafiri/fe-intern-bcc',
