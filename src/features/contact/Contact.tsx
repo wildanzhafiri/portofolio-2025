@@ -44,7 +44,7 @@ export function Contact() {
               <a className="block hover:text-orange-500 transition" href="https://github.com/wildanzhafiri" target="_blank" rel="noreferrer">
                 GitHub
               </a>
-              <a className="block hover:text-orange-500 transition" href="https://www.linkedin.com/in/muhammad-wildan-zhafiri-0a1921289?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noreferrer">
+              <a className="block hover:text-orange-500 transition" href="https://www.linkedin.com/in/muhammad-wildan-zhafiri-0a1921289/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
               <a className="block hover:text-orange-500 transition" href="https://www.instagram.com/wildanzhf/" target="_blank" rel="noreferrer">

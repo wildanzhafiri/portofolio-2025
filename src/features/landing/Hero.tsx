@@ -78,7 +78,7 @@ export function Hero() {
                 <Button as="a" href="#contact" variant="outline">
                   Let&apos;s Talk
                 </Button>
-                <Button as="a" href={`${import.meta.env.BASE_URL}resume/CV_Muhammad_Wildan_Zhafiri.pdf`} download variant="outline">
+                <Button as="a" href={`${import.meta.env.BASE_URL}resume/CV_Muhammad_Wildan_Zhafiri_2025.pdf`} download variant="outline">
                   Download CV
                 </Button>
               </div>
@@ -107,7 +107,7 @@ export function Hero() {
                 </a>
                 <a
                   className="rounded-full px-4 py-2 transition border border-slate-200/60 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur hover:bg-white/90 dark:hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400/40"
-                  href="https://www.linkedin.com/in/muhammad-wildan-zhafiri-0a1921289?utm_source=share_via&utm_content=profile&utm_medium=member_ios/"
+                  href="https://www.linkedin.com/in/muhammad-wildan-zhafiri-0a1921289/"
                   target="_blank"
                   rel="noreferrer"
                 >

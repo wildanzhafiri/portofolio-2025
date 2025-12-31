@@ -209,7 +209,7 @@ export function Navbar() {
           </div>
 
           <div className="flex shrink-0 items-center gap-2">
-            <Button as="a" href={`${import.meta.env.BASE_URL}resume/CV_Muhammad_Wildan_Zhafiri.pdf`} download size="sm" className="hidden sm:inline-flex rounded-full">
+            <Button as="a" href={`${import.meta.env.BASE_URL}resume/CV_Muhammad_Wildan_Zhafiri_2025.pdf`} download size="sm" className="hidden sm:inline-flex rounded-full">
               Download CV
             </Button>
 
@@ -277,7 +277,7 @@ export function Navbar() {
                 );
               })}
 
-              <Button as="a" href={`${import.meta.env.BASE_URL}resume/CV_Muhammad_Wildan_Zhafiri.pdf`} download size="sm" className="mt-2 inline-flex w-full justify-center rounded-2xl sm:hidden" onClick={() => setOpen(false)}>
+              <Button as="a" href={`${import.meta.env.BASE_URL}resume/CV_Muhammad_Wildan_Zhafiri_2025.pdf`} download size="sm" className="mt-2 inline-flex w-full justify-center rounded-2xl sm:hidden" onClick={() => setOpen(false)}>
                 Download CV
               </Button>
             </div>
