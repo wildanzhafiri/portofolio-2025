@@ -18,7 +18,7 @@ export const PROJECTS: readonly Project[] = [
     image: `${import.meta.env.BASE_URL}projects/domma.png`,
     links: {
       // live: 'https://...',
-      // github: 'https://...',
+      github: 'https://github.com/AiFahri/domma',
     },
   },
 
