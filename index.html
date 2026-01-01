@@ -4,7 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portofolio</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F8F5EE" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#090B10" media="(prefers-color-scheme: dark)" />
+
+    <script>
+      (function () {
+        try {
+          const stored = localStorage.getItem('theme');
+          const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+          const shouldDark = stored === 'dark' || (stored !== 'light' && systemDark);
+
+          const html = document.documentElement;
+          if (shouldDark) html.classList.add('dark');
+          else html.classList.remove('dark');
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Wildan's Portfolio 2025</title>
   </head>
   <body>
     <div id="root"></div>
