@@ -39,16 +39,18 @@ export function Hero() {
       "
     >
       <Container className="relative w-full">
-        <div className="grid items-center gap-12 lg:gap-16 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="grid items-center gap-10 lg:gap-16 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="order-2 lg:order-1">
             <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.6 }} transition={{ duration: 0.6, ease }} className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-sm border border-slate-200/70 dark:border-white/15 bg-white/70 dark:bg-white/5 backdrop-blur">
-                <span className="h-2 w-2 rounded-full bg-orange-500" />
-                Open for collaboration
-              </span>
-
               <span className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-sm border border-slate-200/60 dark:border-white/10 bg-white/60 dark:bg-white/5 backdrop-blur text-slate-600 dark:text-slate-300">
-                Based in <span className="font-semibold text-slate-900 dark:text-white">Indonesia</span>
+                <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4 opacity-80" aria-hidden="true">
+                  <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" className="stroke-current" strokeWidth="1.8" strokeLinejoin="round" />
+                  <path d="M12 11.2a2.2 2.2 0 1 0 0-4.4a2.2 2.2 0 0 0 0 4.4Z" className="stroke-current" strokeWidth="1.8" />
+                </svg>
+
+                <span>
+                  Based in <span className="font-semibold text-slate-900 dark:text-white">Malang, East Java, Indonesia</span>
+                </span>
               </span>
             </motion.div>
 
@@ -67,7 +69,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <p className="mt-5 max-w-2xl text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+              <p className="mt-5 max-w-2xl text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg text-justify">
                 I’m a front-end web developer who enjoys building web interfaces and growing through real-world projects. I’m used to collaborating on projects and turning shared ideas into reliable web solutions.
               </p>
             </Reveal>

@@ -74,7 +74,7 @@ export function ProjectCard({ project, onOpenDetail }: { project: Project; onOpe
       </div>
 
       <div className="px-6 pt-5 pb-4 flex flex-col gap-4">
-        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-3">{project.description}</p>
+        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300 line-clamp-3 text-justify">{project.description}</p>
 
         <div className="flex flex-wrap gap-2">
           {project.tags.slice(0, 5).map((t) => (

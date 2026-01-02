@@ -139,9 +139,9 @@ function ExperienceCard({ it }: { it: StoryItem }) {
           {it.photo ? <EvidenceHeroPhoto title={it.title} photo={it.photo} /> : null}
 
           <div className="min-w-0 flex-1">
-            <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-200">{it.story}</p>
+            <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-200 text-justify">{it.story}</p>
 
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-wrap gap-2 text-justify">
               {it.highlights.map((h) => (
                 <HighlightPill key={h}>{h}</HighlightPill>
               ))}

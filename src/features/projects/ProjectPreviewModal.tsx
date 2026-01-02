@@ -101,6 +101,7 @@ export function ProjectPreviewModal({ project, onClose }: { project: Project | n
                 onClick={onClose}
                 className="
                   absolute z-20
+                  cursor-pointer
                   right-3 top-3 sm:right-4 sm:top-4
                   h-10 w-10
                   rounded-full
@@ -159,7 +160,7 @@ export function ProjectPreviewModal({ project, onClose }: { project: Project | n
                             onClick={prev}
                             className="
                               absolute left-3 top-1/2 -translate-y-1/2
-                              h-11 w-11
+                              h-11 w-11 cursor-pointer
                               rounded-full
                               bg-white/85 dark:bg-slate-950/55
                               text-slate-900 dark:text-white
@@ -183,7 +184,7 @@ export function ProjectPreviewModal({ project, onClose }: { project: Project | n
                             className="
                               absolute right-3 top-1/2 -translate-y-1/2
                               h-11 w-11
-                              rounded-full
+                              rounded-full cursor-pointer
                               bg-white/85 dark:bg-slate-950/55
                               text-slate-900 dark:text-white
                               border border-white/60 dark:border-white/12
@@ -257,7 +258,7 @@ export function ProjectPreviewModal({ project, onClose }: { project: Project | n
                           <Skeleton className="h-4 w-[82%]" />
                         </div>
                       ) : (
-                        <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-200">{project?.description}</p>
+                        <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-200 text-justify">{project?.description}</p>
                       )}
                     </div>
 
@@ -275,7 +276,7 @@ export function ProjectPreviewModal({ project, onClose }: { project: Project | n
                           {(project?.highlights ?? []).slice(0, 6).map((h) => (
                             <li key={h} className="flex gap-2">
                               <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-500/80 shrink-0" />
-                              <span>{h}</span>
+                              <span className="text-justify">{h}</span>
                             </li>
                           ))}
                         </ul>

@@ -32,13 +32,13 @@ export function About() {
             </div>
 
             <div className="mt-5 space-y-4">
-              <p className="text-slate-700 dark:text-slate-200 leading-relaxed">
-                I’m a third-year Information Technology student at Universitas Brawijaya with an interest in front-end development. I enjoy working on the visual side of the web and turning ideas into things people can actually use. I’m
-                used to collaborating on projects with people in different roles, sharing ideas, and working together toward a common goal.
+              <p className="text-slate-700 dark:text-slate-200 leading-relaxed text-justify">
+                I’m a third-year Information Technology student at Universitas Brawijaya with an interest in frontend development. I enjoy working on the visual side of the web and turning ideas into things people can actually use. I’m used
+                to collaborating on projects with people in different roles, sharing ideas, and working together toward a common goal.
               </p>
 
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Through academic projects, organizational work, and teaching experiences, I’ve learned how to think through problems, adapt to feedback, and shape ideas into things that are genuinely useful.
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+                Through academic projects, organizational work, and real-world projects, I’ve learned how to think through problems, adapt to feedback, and shape ideas into things that are genuinely useful.
               </p>
             </div>
           </div>
