@@ -15,8 +15,8 @@ export default function App() {
       <Navbar />
       <main className=" pt-[65px] md:pt-[72px]">
         <Hero />
-        <Highlights />
         <About />
+        <Highlights />
         <Skills />
         <Experience />
         <Projects />
