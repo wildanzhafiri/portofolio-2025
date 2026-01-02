@@ -65,11 +65,11 @@ export function IconMotion({ className }: Props) {
   return <BrandIcon Icon={SiFramer} className={className} />;
 }
 
-const Z = 1.15;
+const Z = 1.3;
 
 export function IconApi({ className }: Props) {
   return (
-    <Svg className={className} zoom={Z}>
+    <Svg className={className} zoom={1.5}>
       <path d="M7 7h10v4H7V7Z" stroke="currentColor" strokeWidth="1.7" />
       <path d="M7 13h10v4H7v-4Z" stroke="currentColor" strokeWidth="1.7" />
       <path d="M9 9h.01M9 15h.01" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
@@ -79,11 +79,13 @@ export function IconApi({ className }: Props) {
 
 export function IconMidtrans({ className }: Props) {
   return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <rect x="6.2" y="7" width="3" height="10" rx="1.5" fill="currentColor" />
-      <rect x="10.5" y="5" width="3" height="14" rx="1.5" fill="currentColor" />
-      <rect x="14.8" y="7" width="3" height="10" rx="1.5" fill="currentColor" />
-    </svg>
+    <Svg className={className} zoom={1.5}>
+      <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+        <rect x="6.2" y="7" width="3" height="10" rx="1.5" fill="currentColor" />
+        <rect x="10.5" y="5" width="3" height="14" rx="1.5" fill="currentColor" />
+        <rect x="14.8" y="7" width="3" height="10" rx="1.5" fill="currentColor" />
+      </svg>
+    </Svg>
   );
 }
 
@@ -103,7 +105,7 @@ export function IconProblemSolving({ className }: Props) {
 
 export function IconCollaboration() {
   return (
-    <svg viewBox="0 0 48 48" className="h-4.5 w-4.5 fill-current" aria-hidden="true">
+    <svg viewBox="0 0 48 48" className="h-5 w-5 fill-current" aria-hidden="true">
       <path d="M16 20h-6v-6H6v6H0v4h6v6h4v-6h6v-4zm20 2c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-.64 0-1.25.1-1.83.29 1.13 1.62 1.81 3.59 1.81 5.71s-.68 4.09-1.81 5.71c.58.19 1.19.29 1.83.29zm-10 0c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-3.31 0-6 2.69-6 6s2.69 6 6 6zm13.24 4.32C40.9 27.77 42 29.64 42 32v4h6v-4c0-3.08-4.75-4.97-8.76-5.68zM26 26c-4 0-12 2-12 6v4h24v-4c0-4-8-6-12-6z" />
     </svg>
   );
