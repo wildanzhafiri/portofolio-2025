@@ -59,7 +59,6 @@ function EvidenceHeroPhoto({ title, photo }: { title: string; photo: { src: stri
       aria-label={`Open documentation for ${title}`}
       title="Open photo"
     >
-      \
       <ImageWithSkeleton
         src={photo.src}
         alt={photo.alt ?? title}
@@ -71,8 +70,7 @@ function EvidenceHeroPhoto({ title, photo }: { title: string; photo: { src: stri
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-black/10 to-transparent opacity-95" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(251,146,60,0.22),transparent_55%)] opacity-80" />
       <div className="absolute bottom-2 left-2 flex items-center gap-2">
-        <span className="rounded-full bg-black/35 text-white text-[10px] px-2.5 py-1 backdrop-blur border border-white/10">Photo</span>
-        <span className="rounded-full bg-white/10 text-white text-[10px] px-2.5 py-1 backdrop-blur border border-white/10">Open</span>
+        <span className="rounded-full bg-white/10 text-white text-[10px] px-2.5 py-1 backdrop-blur border border-white/10">Click to Open</span>
       </div>
     </button>
   );

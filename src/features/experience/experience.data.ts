@@ -21,26 +21,12 @@ export const EXPERIENCE_DATA: readonly StoryItem[] = [
     title: 'First Place at Teknovistafest Web Design Competition',
     context: 'First Competition',
     story:
-      'This competition at Universitas Airlangga was not only about design, but also about implementing it into real code and a working project. I worked with a JavaScript framework and REST APIs for the first time, while collaborating in a team and taking responsibility as the front-end developer under tight deadlines.',
+      'This competition at Universitas Airlangga was not only about design, but also about implementing it into real code and a working project. I worked with a JavaScript framework and REST APIs, collaborating in a team and taking responsibility as the front-end developer under tight deadlines.',
     highlights: ['Learned and applied the React framework in a real project', 'Built a complete web application within a limited timeframe', 'Used Git for version control and collaborative development'],
     photo: {
       src: `${import.meta.env.BASE_URL}/images/dokum teknovistafest.png`,
       alt: 'Teknovistafest award',
       orientation: 'portrait',
-    },
-  },
-  {
-    year: '2025',
-    label: 'Teaching',
-    title: 'Practicum Tutor for Web Application Development',
-    context: 'Mentoring Environment',
-    story:
-      'Becoming a practicum tutor changed how I approached learning. Explaining concepts to others required clarity and structure, which helped me identify gaps in my own understanding. This role strengthened both my technical foundation and my ability to communicate effectively.',
-    highlights: ['Guided students through weekly web development practicum sessions', 'Reviewed assignments and delivered clear, constructive feedback', 'Reinforced core fundamentals through teaching and mentoring'],
-    photo: {
-      src: `${import.meta.env.BASE_URL}/images/dokum asprak.png`,
-      alt: 'Dokumentasi Asprak',
-      orientation: 'landscape',
     },
   },
   {
@@ -54,6 +40,20 @@ export const EXPERIENCE_DATA: readonly StoryItem[] = [
     photo: {
       src: `${import.meta.env.BASE_URL}/images/dokum ptpd.png`,
       alt: 'Company Profile',
+      orientation: 'landscape',
+    },
+  },
+  {
+    year: '2025',
+    label: 'Lab Assistant',
+    title: 'Lab Assistant for Web Application Programming',
+    context: 'Teaching Environment',
+    story:
+      'Becoming a Lab Assistant changed how I approached learning. Explaining concepts to others required clarity and structure, which helped me identify gaps in my own understanding. This role strengthened both my technical foundation and my ability to communicate effectively.',
+    highlights: ['Guided students through weekly web development practicum sessions', 'Reviewed assignments and delivered clear, constructive feedback', 'Reinforced core fundamentals through teaching and mentoring'],
+    photo: {
+      src: `${import.meta.env.BASE_URL}/images/dokum asprak.png`,
+      alt: 'Dokumentasi Asprak',
       orientation: 'landscape',
     },
   },
